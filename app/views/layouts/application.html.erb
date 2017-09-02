@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+<% render 'partials/nav'%>
+
+    <p>Everything on this page is factual</p>
+<div class="container-fluid">
+
+    <%= yield %>
+
+</div>
+  </body>
+</html>
